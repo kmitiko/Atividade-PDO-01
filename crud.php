@@ -144,4 +144,4 @@ echo "<br><br>---<br><br>";
     echo "<br><br>---<br><br>";
     delete(2); #deletado aluno Mariana, mariana@gmail.com
     echo "<br><br>---<br><br>";
-    get();
+ get();
