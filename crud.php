@@ -39,7 +39,7 @@ function get()
                 echo $row->email . "<br>";
             }
         } catch (PDOException $error) {
-            echo "Erro ao listar as cidades. Erro: {$error->getMessage()}";
+            echo "Erro ao listar aluno. Erro: {$error->getMessage()}";
         } finally {
             unset($con);
             unset($rs);
