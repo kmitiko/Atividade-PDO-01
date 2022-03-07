@@ -8,7 +8,7 @@ if($_POST['txtAluno'] == NULL || $_POST['txtEmail'] == NULL)
     die(); #matar o carregamento da página
 }
 
-$result = fnAddAluno($_POSTR['txtAluno'], $_POST['txtEmail']);
+$result = create($_POST['txtAluno'], $_POST['txtEmail']);
 echo $result;
 
 # ?status=access-deny = query string  --> $status = access deny

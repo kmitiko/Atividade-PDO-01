@@ -14,11 +14,11 @@
             <form action="">
                 <div class="form-group">
                     <label for="aluno_id">Nome do Aluno</label>
-                    <input class="form-control" type="text" name="txtAluno" id="aluno_id"  placeholder="Informe o nome do Aluno">
+                    <input class="form-control" type="text" name="txtaluno" id="aluno_id"  placeholder="Informe o nome do Aluno">
                 </div>
                 <div class="form-group">
                     <label for="email_id">Email do Aluno</label>
-                    <input class="form-control" type="text" name="txtEmail" id="email_id"  placeholder="Informe o Email">
+                    <input class="form-control" type="text" name="txtemail" id="email_id"  placeholder="Informe o Email">
                 </div>
                 <button class="btn btn-dark my-2" type="submit">Cadastrar</button>
             </form>
