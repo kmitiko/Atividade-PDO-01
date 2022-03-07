@@ -11,7 +11,7 @@
     <div class="container">
         <fieldset>
             <legend>Cadastro de Alunos</legend>
-            <form action="">
+            <form action="./aluno.register.php" method="post">
                 <div class="form-group">
                     <label for="aluno_id">Nome do Aluno</label>
                     <input class="form-control" type="text" name="txtaluno" id="aluno_id"  placeholder="Informe o nome do Aluno">
