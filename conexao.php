@@ -3,7 +3,7 @@
 define("HOST", "localhost");
 define("USER", "root");
 define("PASS", "");
-define("DATABASE", "Aluno_db");
+define("DATABASE", "dev_hstyle");
 
 function getConnection()
 {

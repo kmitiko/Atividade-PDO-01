@@ -1,27 +1,21 @@
 <?php
 
-require_once('./crud.php');
+require_once('./crud_cliente.php');
 
 
-if($_POST['txtaluno'] == NULL || $_POST['txtemail'] == NULL)
+if($_POST['txtnome'] == NULL || $_POST['txtcpf'] == NULL || $_POST['txtdataNasc'] == NULL || $_POST['txtendereco'] == NULL || $_POST['txtcelular'] == NULL || $_POST['textdataCadastro'])
 {
-    header('location: ./error.php?status=access-deny'); #redirecionar para a página error.php
-    die(); #matar o carregamento da página
-}
+    header('location: ./error.php?status=access-deny'); 
+    die(); 
 
-<<<<<<< HEAD
-$aluno = new stdClass();
-$aluno->nome=$_POST['txtaluno'];
-$aluno->email=$_POST['txtemail'];
+$cliente = new stdClass();
+$cliente->nome=$_POST['txtnome'];
+$cliente->cpf=$_POST['txtcpf'];
+$cliente->dataNasc=$_POST['txtdataNasc'];
+$cliente->endereco=$_POST['txtendereco'];
+$cliente->celular=$_POST['txtcelular'];
+$cliente->dataCadastro=$_POST['txtdataCadastro'];
 
-create($aluno);
+create($cliente);
 
-#$result = create($_POST['txtAluno'], $_POST['txtEmail']);
-
-=======
-$result = create($_POST['txtAluno'], $_POST['txtEmail']);
-echo $result;
->>>>>>> 303543d2c7c900abfa94f6f850130770003e1e18
-
-# ?status=access-deny = query string  --> $status = access deny
-# chave1=valor1&chave2=valor2&chave3=valor3 ... 
+?>
